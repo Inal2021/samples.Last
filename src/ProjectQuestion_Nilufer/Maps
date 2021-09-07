@@ -1,0 +1,29 @@
+1- map'ler key-value yapısını kullanırlar.
+      2- keyler tekrarlı değer kabul etmez yani unique olmalıdır. Örneğin kimlik no
+      3- value lar tekrarlı olabilirler  Örneğin isimler
+      4- Üç farklı map vardır.
+          a) HashMap : En çok kullanılan ve en hızlıdır. Hızlı olabilmek için sıralamayı rastgele yapr.
+                         Hızlı olabilmek için synchronize olmazlar, thread-safe değildirler.
+                         Bir tane key null olabilir, birden fazla value null olabilir.
+          b) HashTable :
+          c) TreeMap :
+
+      */
+
+      /*
+     **********önemli******* 1- HashMap ve TreeMap synchorized ve thread-safe değildir. Map ler arasında synchorized ve thread-safe olan
+      bir map e ihtiyaç vardır. bu yüzden HashTable oluştrulmuşturç
+
+      2-HashTable key yada value için "null" kullanmaz
+
+      3- HashTable elemanları rastgele sıralar.
+
+      4- hashmap<hashtable<treemap     hız bakımından
+      */
+
+      /*
+      1-TreeMap elemanları natural order(küçükten büyüğe,alfabetik) a göre sıralar.
+      2-TreeMAp Maplerin en yavaşıdr
+      3- TreeMAplarde keyler için null kullanılamaz..
+      4- TreeMaplerde value lar için null kullanılabilir(istenildiği kadar)
+      5- TreeMap ler syncronized ve thread-safe değillerdir.
