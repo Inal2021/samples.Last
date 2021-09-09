@@ -1,6 +1,8 @@
 package ProjectQuestion_Nilufer;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 public class MapOrnek {
@@ -21,21 +23,22 @@ public class MapOrnek {
         int num=scan.nextInt();
         System.out.println("Ögrenci ismi giriniz: ");
         String name= scan.nextLine();
-
+/*
         if(sinif.putIfAbsent(num, name)==null){
 
             System.out.println(sinif.get(num)  + "ogrenci eklenmistir");
         } else {
             System.out.println("Ilgili numara dolu!!!" );
         }
-
+                                                                        */
         // Bir numara girildiginde o kisiye ait sinif bilgisini bize gosterisn,
         // Eger kayit yoksa böyle bir kayit yok desin
 
-        if (sinif.containsKey(num)) {
-            sinif.containsValue()
-        }
+        System.out.println(sinif.get(num).indexOf('-')); // Burada '-' isaretinin hangi indexte oldugunu vermis oldu ==>> 20
+        // substring ile -->> a.substring(baslangic index, bitis index) seklinde kullanabiliriz.
+        // a.substring(baslangic Indexi) dersek burada basladigi indexten sonrasini alir.
 
+        System.out.println("Numarasini girmis oldugunuz ögrencinin sinifi : "+sinif.get(num).substring(sinif.get(num).indexOf('-')+1));
 
 
 
