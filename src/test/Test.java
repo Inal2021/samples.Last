@@ -1,50 +1,36 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 class Test{
 
     public static void main(String args[]){
+//1)
+        String str="Java is easy";
 
+        System.out.println(str.contains("is"));
 
-        List<Integer> list = new ArrayList<>();
+        System.out.println(str.contains("and"));
+//2) 1.yol
+        String result = Optional.ofNullable(str)
+                .filter(sStr -> sStr.length() != 0)
+                .map(sStr -> sStr.substring(0, sStr.length() - 1))
+                .orElse(str);
 
-        list.add(12);
-
-        list.add(13);
-
-        list.add(14);
-
-        list.add(15);
-
-        list.add(16);
-
-        System.out.println(list);
-
-        ListIterator<Integer> it = list.listIterator();
-
-        int idx = 0;
-
-        while(it.hasNext()) {
-
-            Integer el = it.next();
-
-            if(idx>2) {
-
-                break;
-
-            }
-
-            it.set(el = el*2);
-
-            System.out.print(el + " ");
-
-            idx++;
-
+        System.out.println(result);
+        //2. yol
+        String x = null;
+        if ((str != null) && (str.length() > 0)) {
+            x = str.substring(0, str.length() - 1);
         }
-        }
+
+        System.out.println(x);
+
+//3)
+
+        System.out.println(str.toUpperCase());
+
+    }
 
     }
 
