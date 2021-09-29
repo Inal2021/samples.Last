@@ -3,7 +3,7 @@ package konuTekrarlari;
 public class LambdaMethodClass {
 
 public static void boslukluYazdir(Object o) {
-    System.out.println(o+" ");
+    System.out.print(o+" ");
 }
 
 public static boolean ciftMi(int x) { return x%2==0;}
