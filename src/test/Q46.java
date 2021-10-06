@@ -13,5 +13,17 @@ public class Q46 {
         kontrolEt("feminine", "nine") ➞ true
         kontrolEt("convention", "tio") ➞ false    */
 
+        String x="MerveHocam";
+        String y="SedefHocam";
+        String z="Hocam";
+
+        kontrolEt(x,y,z );
+
+    }
+
+    private static void kontrolEt(String x, String y, String z) {
+
+        System.out.println(x.endsWith(y));
+        System.out.println(x.endsWith(z));
     }
 }

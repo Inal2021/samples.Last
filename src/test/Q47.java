@@ -19,7 +19,17 @@ public class Q47 {
 
 * */
 
+String kelime="A";
 
+int ortaSayi=0;
+
+if(kelime.length()%2==0) {
+    ortaSayi=kelime.length()/2;
+    System.out.println(kelime.charAt(kelime.length() / 2-1) + "" + kelime.charAt(kelime.length() / 2));
+} else {
+    ortaSayi=kelime.length()/2;
+    System.out.println(kelime.charAt(kelime.length()/2));
+}
 
 
     }
